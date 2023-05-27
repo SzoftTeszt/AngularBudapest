@@ -10,9 +10,10 @@ import { NavComponent } from './nav/nav.component';
 import { AdatokComponent } from './adatok/adatok.component';
 import { UjAdatComponent } from './uj-adat/uj-adat.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { enviroment } from 'src/enviroments';
+
 import { FormsModule } from '@angular/forms';
 import { OrderByYearPipe } from './order-by-year.pipe';
+import { enviroment } from 'src/enviroments';
 @NgModule({
   declarations: [
     AppComponent,

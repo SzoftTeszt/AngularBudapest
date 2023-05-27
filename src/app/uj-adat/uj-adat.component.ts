@@ -21,7 +21,7 @@ export class UjAdatComponent {
 
   create(){
     console.log(this.ujMeres);
-    this.base.create(this.ujMeres);
+    this.base.fscreate(this.ujMeres);
     this.router.navigate(['/adatok']);
   }
 }
