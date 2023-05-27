@@ -1,0 +1,15 @@
+<div class="card" >    
+    <div class="card-body">
+      <h5 class="card-title">Új mérés felvitele</h5>
+        <!-- {{ujMeres|json}} -->
+        <form #ujAdat>
+            <div class="form-group">
+            <ng-container *ngFor="let oszlop of oszlopok">    
+              <label [for]="oszlop">{{oszlop}}</label>
+              <input [(ngModel)]="ujMeres[oszlop]" required min="0" type="number" class="form-control" [id]="oszlop" [name]="oszlop">
+            </ng-container>   
+            </div>            
+            <button (click)="create()" type="submit" class="btn btn-primary">Submit</button>
+          </form>     
+    </div>
+  </div>

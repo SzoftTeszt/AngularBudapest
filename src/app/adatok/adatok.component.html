@@ -1,0 +1,12 @@
+
+<div  class="row">
+    <div *ngFor="let oszlop of oszlopok" class="col my-2">{{oszlop}}</div>
+</div>
+
+<div *ngIf="showError" class="alert alert-danger" role="alert">
+    {{errorMessage}}
+</div>
+
+<div *ngFor="let sor of adatok| orderByYear" class="row my-1">
+    <div *ngFor="let oszlop of oszlopok" class="col">{{sor[oszlop]}}</div>
+</div>
